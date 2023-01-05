@@ -1,0 +1,156 @@
+:root {
+  --primary-color: #eddecc;
+  --secondary-color: #215a5e;
+  --primary-color-active: #e4d0b8;
+  --secondary-color-active: #12415b;
+  --white: rgb(245, 245, 245);
+  --black: rgb(35, 35, 35);
+}
+div {
+  border: solid 1px red;
+}
+
+.flex {
+  display: flex;
+  inline-size: overflow-wrap;
+}
+.container {
+  padding: 0;
+  margin: 0;
+}
+.topBar {
+  padding: 0 0 200px 0;
+  margin: 0;
+  margin: 0 0 1em 0;
+  z-index: 2; /* Stay on top */
+}
+.logo {
+  scale: 70%;
+  position: relative;
+}
+.topNav {
+  width: 100%;
+  float: left;
+  padding: 0;
+  background-color: var(--primary-color);
+  overflow: hidden;
+  position: relative;
+}
+.topNav ul {
+  list-style: none;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Style the links inside the navigation bar */
+.topNav li {
+  float: right;
+  color: var(--secondary-color);
+  text-align: center;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 17px;
+  margin-right: 0px;
+  border-radius: 5px;
+}
+
+/* Change the color of links on hover */
+.topNav li:hover {
+  background-color: var(--primary-color-active);
+  color: var(--secondary-color-active);
+  border-radius: 5px;
+}
+
+/* Add a color to the active/current link */
+.topNav li.active {
+  background-color: var(--primary-color-active);
+  color: var(--secondary-color-active);
+  border-radius: 5px;
+}
+
+section {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 20px;
+}
+section .home {
+  border-radius: 500px 500px 5px 5px;
+  background-color: var(--primary-color);
+}
+section .headers {
+  color: var(--secondary-color);
+}
+section .bodyText {
+  margin-left: 20%;
+  margin-right: 20%;
+  padding: 50px 10px 10px 50px;
+}
+
+.flex {
+  display: flex;
+  inline-size: overflow-wrap;
+}
+.body {
+  padding: 0;
+  margin: 0;
+}
+.topNav {
+  padding: 0;
+  margin: 0;
+}
+.logo {
+  position: absolute;
+  scale: 70%;
+  top: 0;
+  left: 100px;
+  z-index: 1; /* Stay on top */
+}
+.sideNav {
+  width: 20%;
+  height: auto;
+  position: fixed;
+  margin-top: 0;
+  margin-left: 0;
+  overflow-x: hidden;
+  padding-top: 200px;
+}
+.sideNav ul {
+  list-style: none;
+  max-width: 20%;
+  margin: 0 auto;
+  padding: 20px;
+  display: list-item;
+}
+
+/* Style the links inside the navigation bar */
+.sideNav li {
+  float: left;
+  color: var(--secondary-color);
+  text-align: left;
+  padding: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the color of links on hover */
+.sideNav li:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color-active);
+  border-radius: 5px;
+}
+
+/* Add a color to the active/current link */
+.sideNav li.active {
+  color: var(--secondary-color-active);
+  border-radius: 5px;
+}
+
+#column {
+  flex-direction: column;
+}
+#row {
+  flex-direction: row;
+}
