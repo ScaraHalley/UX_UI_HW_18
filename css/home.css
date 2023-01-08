@@ -3,9 +3,12 @@
   --secondary-color: #215a5e;
   --primary-color-active: #e4d0b8;
   --secondary-color-active: #12415b;
+  --primary-color-hover: #e4d0b849;
+  --secondary-color-hover: #0a3247;
   --white: rgb(245, 245, 245);
   --black: rgb(35, 35, 35);
 }
+
 div {
   border: solid 1px red;
 }
@@ -14,38 +17,39 @@ div {
   display: flex;
   inline-size: overflow-wrap;
 }
-.container {
-  padding: 0;
-  margin: 0;
-}
+
 .topBar {
-  padding: 0 0 200px 0;
+  padding: 0 0 60px 0;
   margin: 0;
   margin: 0 0 1em 0;
-  z-index: 2; /* Stay on top */
+  z-index: 2;
 }
+
 .logo {
+  position: absolute;
   scale: 70%;
-  position: relative;
+  top: 0;
+  left: 5%;
+  z-index: 1;
 }
+
 .topNav {
   width: 100%;
-  float: left;
   padding: 0;
   background-color: var(--primary-color);
-  overflow: hidden;
+  overflow-y: hidden;
   position: relative;
 }
+
 .topNav ul {
   list-style: none;
   max-width: 1100px;
   margin: 0 auto;
   padding: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
 }
 
-/* Style the links inside the navigation bar */
 .topNav li {
   float: right;
   color: var(--secondary-color);
@@ -57,57 +61,29 @@ div {
   border-radius: 5px;
 }
 
-/* Change the color of links on hover */
 .topNav li:hover {
-  background-color: var(--primary-color-active);
-  color: var(--secondary-color-active);
+  background-color: var(--primary-color-hover);
+  color: var(--secondary-color-hover);
   border-radius: 5px;
 }
 
-/* Add a color to the active/current link */
 .topNav li.active {
   background-color: var(--primary-color-active);
   color: var(--secondary-color-active);
   border-radius: 5px;
-}
-
-section {
-  margin-left: 20%;
-  margin-right: 20%;
-  padding: 20px;
-}
-section .home {
-  border-radius: 500px 500px 5px 5px;
-  background-color: var(--primary-color);
-}
-section .headers {
-  color: var(--secondary-color);
-}
-section .bodyText {
-  margin-left: 20%;
-  margin-right: 20%;
-  padding: 50px 10px 10px 50px;
+  font-weight: 600;
 }
 
 .flex {
   display: flex;
   inline-size: overflow-wrap;
 }
+
 .body {
   padding: 0;
   margin: 0;
 }
-.topNav {
-  padding: 0;
-  margin: 0;
-}
-.logo {
-  position: absolute;
-  scale: 70%;
-  top: 0;
-  left: 100px;
-  z-index: 1; /* Stay on top */
-}
+
 .sideNav {
   width: 20%;
   height: auto;
@@ -115,42 +91,83 @@ section .bodyText {
   margin-top: 0;
   margin-left: 0;
   overflow-x: hidden;
-  padding-top: 200px;
+  vertical-align: middle;
 }
 .sideNav ul {
   list-style: none;
   max-width: 20%;
-  margin: 0 auto;
-  padding: 20px;
   display: list-item;
 }
 
-/* Style the links inside the navigation bar */
 .sideNav li {
   float: left;
   color: var(--secondary-color);
   text-align: left;
-  padding: 20px;
+  padding: 18px;
   text-decoration: none;
   font-size: 18px;
 }
 
-/* Change the color of links on hover */
 .sideNav li:hover {
-  background-color: var(--primary-color);
+  background-color: var(--primary-color-hover);
   color: var(--secondary-color-active);
   border-radius: 5px;
 }
 
-/* Add a color to the active/current link */
 .sideNav li.active {
   color: var(--secondary-color-active);
   border-radius: 5px;
+  font-weight: 600;
+}
+h1,
+h2,
+h3,
+h4 {
+  color: var(--secondary-color);
+}
+h1 {
+  font-size: 42px;
+}
+h2 {
+  font-size: 32px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+section {
+  margin-left: 20%;
+  margin-right: 10%;
+  margin-bottom: 100px;
+  max-width: 1200px;
+}
+.archTop {
+  padding: 60px 0 60px 0;
+  border-radius: 700px 700px 5px 5px;
+  background-color: var(--primary-color);
+}
+.archBottom {
+  padding: 60px 0 60px 0;
+  border-radius: 5px 5px 700px 700px;
+  background-color: var(--primary-color);
 }
 
-#column {
-  flex-direction: column;
+section .bodyText {
+  margin-left: 25%;
+  padding: 40px 20px 40px 20px;
 }
-#row {
-  flex-direction: row;
+img .hero {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.center {
+  text-align: center;
 }
