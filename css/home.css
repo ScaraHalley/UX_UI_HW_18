@@ -59,6 +59,7 @@ div {
   font-size: 17px;
   margin-right: 0px;
   border-radius: 5px;
+  font-family: "Philosopher", sans-serif;
 }
 
 .topNav li:hover {
@@ -92,6 +93,7 @@ div {
   margin-left: 0;
   overflow-x: hidden;
   vertical-align: middle;
+  font-family: "Philosopher", sans-serif;
 }
 .sideNav ul {
   list-style: none;
@@ -100,7 +102,7 @@ div {
 }
 
 .sideNav li {
-  float: left;
+  float:inherit
   color: var(--secondary-color);
   text-align: left;
   padding: 18px;
@@ -124,6 +126,7 @@ h2,
 h3,
 h4 {
   color: var(--secondary-color);
+  font-family: "Philosopher", sans-serif;
 }
 h1 {
   font-size: 42px;
@@ -140,6 +143,7 @@ h4 {
 p {
   font-size: 18px;
   line-height: 1.5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 section {
   margin-left: 20%;
