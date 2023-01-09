@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sarah Halley UX/UI Designer</title>
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,32 +15,36 @@
   </head>
   <body>
     <div class="container">
+      <img class="flex_item logo" src="images/Logo no text.png" />
       <div class="flex topBar">
-        <img class="flex_item logo" src="images/Logo no text.png" />
-        <div class="flex_item topNav">
+        <div id="homeLink" class="flex_item topNav">
           <ul>
-            <li class="active">Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Skills</li>
-            <li>Experience</li>
-            <li>Education</li>
-            <li>Interests</li>
-            <li>Contact</li>
+            <li>
+              <a href="/home.html" class="active">Home</a>
+            </li>
+            <li><a href="#aboutLink">About</a></li>
+            <li><a href="/project.html">Projects</a></li>
+            <li><a href="/skills.html">Skills</a></li>
+            <li><a href="#">Experience</a></li>
+            <li><a href="#">Education</a></li>
+            <li><a href="#">Interests</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </div>
       </div>
 
       <div class="sideNav flex_item">
         <ul>
-          <li class="active">Home</li>
-          <li>About</li>
-          <li>Projects</li>
-          <li>Skills</li>
-          <li>Experience</li>
-          <li>Education</li>
-          <li>Interests</li>
-          <li>Contact</li>
+          <li>
+            <a href="/home.html" class="active">Home</a>
+          </li>
+          <li><a href="#aboutLink">About</a></li>
+          <li><a href="/project.html">Projects</a></li>
+          <li><a href="/skills.html">Skills</a></li>
+          <li><a href="#">Experience</a></li>
+          <li><a href="#">Education</a></li>
+          <li><a href="#">Interests</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </div>
       <div class="column">
@@ -55,7 +59,7 @@
         </section>
       </div>
       <div class="column">
-        <section class="about flex_item">
+        <section id="aboutLink" class="about flex_item">
           <div class="column archBottom">
             <h1>About</h1>
             <p class="flex_item bodyText about">
@@ -77,36 +81,6 @@
             </div>
           </div>
         </section>
-      </div>
-    </div>
-
-    <div id="column" class="flex">
-      <div class="flex_item">
-        We get it almost every night <br />When that moon is big and bright
-        <br />It's a supernatural delight <br />Everybody's dancing in the
-        moonlight
-      </div>
-      <div class="flex_item">
-        Everybody here is out of sight <br />They don't bark and they don't bite
-        <br />
-        They keep things loose they keep it tight <br />Everybody's dancing in
-        the moonlight
-      </div>
-      <div class="flex_item">
-        Dancing in the moonlight <br />Everybody's feeling warm and bright
-      </div>
-    </div>
-    <div id="row" class="flex">
-      <div class="flex_item">
-        It's such a fine and natural sight <br />Everybody's dancing in the
-        moonlight
-      </div>
-      <div class="flex_item">
-        We like our fun and we never fight <br />You can't dance and stay
-        uptight
-      </div>
-      <div class="flex_item">
-        It's a supernatural delight <br />Everybody was dancing in the moonlight
       </div>
     </div>
   </body>
