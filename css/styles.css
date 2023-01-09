@@ -155,13 +155,13 @@ section .bodyHeader {
   padding: 60px 0 20px 0;
   border-radius: 1500px 1500px 5px 5px;
   background-color: var(--primary-color);
-  min-height: 350px;
+  min-height: 400px;
 }
 .archBottom {
   padding: 20px 0 60px 0;
   border-radius: 5px 5px 1500px 1500px;
   background-color: var(--primary-color);
-  min-height: 350px;
+  min-height: 400px;
 }
 section .bodyText {
   margin-left: 25%;
@@ -194,7 +194,7 @@ img {
 div .icon {
   height: 100px;
   width: 100px;
-  border-radius: 40px;
+  border-radius: 25px;
 }
 /* PROJECTS*/
 
