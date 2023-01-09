@@ -135,14 +135,16 @@ p {
   font-size: 18px;
   line-height: 1.5;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 0 2px 0 2px;
 }
 
 /*Section Styling*/
 section {
   margin-left: 25%;
   margin-right: 15%;
-  margin-bottom: 100px;
   max-width: 1000px;
+  margin-bottom: 20px;
+
   align-items: center;
 }
 section .bodyHeader {
@@ -185,7 +187,9 @@ div .homeHero {
 .center {
   text-align: center;
 }
-
+img {
+  padding: 2px;
+}
 /* PROJECTS*/
 
 /* project navigation*/
