@@ -131,7 +131,8 @@ h3 {
 h4 {
   font-size: 18px;
 }
-p {
+p,
+li {
   font-size: 18px;
   line-height: 1.5;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
