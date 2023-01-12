@@ -234,3 +234,19 @@ div .icon {
   border-radius: 25px;
   font-weight: 700;
 }
+
+/*Responsive*/
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+  /*hide the elements */
+  div.sideNav {
+    display: none;
+  }
+  img .responsive {
+    max-width: 100%;
+    height: auto;
+  }
+}
