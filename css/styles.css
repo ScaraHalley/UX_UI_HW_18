@@ -249,4 +249,28 @@ div .icon {
     max-width: 100%;
     height: auto;
   }
+  section {
+    margin-left: 15%;
+    margin-right: 15%;
+    max-width: 1000px;
+    margin-bottom: 20px;
+
+    align-items: center;
+  }
+  .archTop {
+    padding: 60px 0 20px 0;
+    border-radius: 800px 800px 5px 5px;
+    background-color: var(--primary-color);
+    min-height: 200px;
+  }
+  .archBottom {
+    padding: 20px 0 60px 0;
+    border-radius: 5px 5px 800px 800px;
+    background-color: var(--primary-color);
+    min-height: 200px;
+  }
+  section .bodyText {
+    margin-left: 5%;
+    padding: 20px 20px 20px 20px;
+  }
 }
